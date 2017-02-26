@@ -1,28 +1,23 @@
-nav.navbar.navbar-default.navbar-fixed-top
-   .container
-      .navbar-header
-         button(type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-         a.navbar-brand(href='#') Drop
-      #navbar.collapse.navbar-collapse
-         ul.nav.navbar-nav
-            li
-               a Home
-            li
-               a About
-            li
-               a Marketing
-            li.dropdown
-               a.dropdown-toggle(data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
-                  |Dropdown
-                  span.caret
-               ul.dropdown-menu
-                  li
-                     a(href='#') Action
-                  li
-                     a(href='#') Another action
-                  li
-                     a(href='#') Another action
+.top-bar
+   .top-bar-left
+      ul.dropdown.menu(data-dropdown-menu)
+         li.menu-text Drop
+         li
+            a One
+            ul.menu.vertical
+               li
+                  a One
+               li
+                  a Two
+               li
+                  a Three
+         li
+            a Two
+         li
+            a Three
+   .top-bar-right
+      ul.menu
+         li
+            input(type='search' placeholder='Search')
+         li
+            button.button(type='button') Search

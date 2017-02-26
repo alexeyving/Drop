@@ -52,7 +52,7 @@ let webpackConfig = {
 				test: /\.scss$/,
 				use: ExtractTextPlugin.extract({
 					fallback: "style-loader",
-					use: 'css-loader!sass-loader'
+					use: 'css-loader!postcss-loader!sass-loader'
 				})
 			},
 			{
@@ -65,7 +65,7 @@ let webpackConfig = {
 	plugins: [
 		new CommonsChunkPlugin({
 			name: 'common',
-			minChunks: function (module, count) {
+			minChunks: function (module, count) {s
 				return !isExternal(module) && count >= 2; // adjustable cond
 			}
 		}),
