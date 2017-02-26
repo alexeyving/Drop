@@ -65,7 +65,7 @@ let webpackConfig = {
 	plugins: [
 		new CommonsChunkPlugin({
 			name: 'common',
-			minChunks: function (module, count) {s
+			minChunks: function (module, count) {
 				return !isExternal(module) && count >= 2; // adjustable cond
 			}
 		}),
