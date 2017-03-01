@@ -45,7 +45,7 @@ let webpackConfig = {
 
 			{
 				test: /\.pug/,
-				use: 'pug-loader'
+				use: 'pug-loader?pretty=true'
 			},
 
 			{

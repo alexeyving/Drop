@@ -10,7 +10,7 @@
     "start": "npm-run-all --parallel serve serve:dev build:dev",
     "serve": "node config/server/server.js",
     "serve:dev": "browser-sync start --config config/server/browser-sync.js",
-    "build:dev": "webpack --config config/webpack.js"
+    "build:dev": "webpack --display-error-details --config config/webpack.js"
   },
   "dependencies": {
     "npm-run-all": "3.1.0",
@@ -27,6 +27,7 @@
     "css-loader": "0.14.5",
     "exports-loader": "^0.6.3",
     "extract-text-webpack-plugin": "^2.0.0",
+    "file-loader": "^0.10.1",
     "foundation-sites": "^6.3.0",
     "html-webpack-harddisk-plugin": "^0.1.0",
     "html-webpack-plugin": "^2.26.0",

@@ -1,15 +1,2 @@
 @import "common/index";
 @import "components/index";
-.no-js {
-	@include breakpoint(small only) {
-		.top-bar {
-			display: none;
-		}
-	}
-
-	@include breakpoint(medium) {
-		.title-bar {
-			display: none;
-		}
-	}
-}

@@ -440,7 +440,7 @@ body {
   background: #fefefe;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
-  line-height: 2;
+  line-height: 1.5;
   color: #0a0a0a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -3660,7 +3660,7 @@ a.thumbnail {
       flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: transparent; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -3941,3 +3941,9 @@ a.thumbnail {
 @media print, screen and (min-width: 40em) {
   .no-js .title-bar {
     display: none; } }
+
+.nav {
+  height: 6.25rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%; }
